@@ -1,0 +1,154 @@
+/* colors */
+
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main{
+    background-color: var(--dark-cyan);
+    width: 100%;
+    height: 100%;
+}
+.bg-top{
+    width: 822px;
+    height: 822px;
+    background-image: url(../images/bg-pattern-top.svg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    top: -319px;
+    left: -261px;
+}
+.bg-bottom{
+    width: 822px;
+    height: 822px;
+    background-image: url(../images/bg-pattern-top.svg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    top: -319px;
+    left: 534px;
+}
+
+.card{
+    width: 400px;
+    height: 501px;
+    position: relative;
+    top: -1536px;
+    left: 12px;
+    margin: 0 auto;
+    background-color: white;
+    z-index: 2;
+    border-radius: 23px;
+}
+
+.card-bg{
+    width: 100%;
+    height: 150px;
+    background-image: url(../images/bg-pattern-card.svg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    top: 0;
+    border-radius: 23px 23px 0 0;
+}
+
+.person-image{
+    display: inline-block;
+    position: relative;
+    top: -52px;
+    left: 151px;
+    border: 6px solid white;
+    border-radius: 50%;
+}
+.person-image > img{
+    border-radius: 50%;
+}
+
+
+
+.name-age{
+    display: inline-block;
+    position: relative;
+    top: -45px;
+    left: 30px;
+}
+.name-age h1{
+    position: absolute;
+    top: 15px;
+    left: 105px;
+    width: 154px;
+    font-size: 18px;
+}
+
+.name-age p{
+    position: absolute;
+    top: 17px;
+    left: 219px;
+    font-size: 18px;
+    
+}
+.city{
+    position: absolute;
+    top: 290px;
+    left: 167px;
+}
+
+
+.numbers{
+    position: relative;
+    width: 400px;
+    top: 64px;
+    left: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    border-top: 1px solid var(--dark-gray);
+    padding-top: 28px;
+}
+
+
+h1{
+    font-size: 18px;
+    color: var(--very-dark-desaturated-blue);
+}
+p{
+    color: var(--dark-grayish-blue);
+}
+
+.numbers > div{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.numbers .followers{
+    margin-left: 30px;
+}
+.numbers p{
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.numbers .photos{
+    margin-right: 11px;
+}
+
+.numbers .likes{
+    margin-right: 11px;
+}
